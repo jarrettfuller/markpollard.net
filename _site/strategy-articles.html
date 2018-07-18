@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Archive—Mark Pollard</title>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="/styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,600,600i" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+
+        <link rel="icon" type="image/png" href="/images/favicon.jpg">
+
+
+    </head>
+    <body id="top">
+<header>
+    <h1><a href="/"><img src="/images/name.jpg" height="24px"></a></h1>
+            <nav><ul>
+                <li><a href="/strategy-articles">Articles</a></li>
+                <li><a href="/strategy-resources">Resources</a></li>
+                <li><a href="/sweathead-podcast">Podcast</a></li>
+                <li><a href="/about-mark-pollard">About</a></li>
+             </ul></nav>
+    </header>
+
+
+
+<div id="container">
+      <ul class="blog-tags-list clearfix">
+          <a href onclick="filter('all'); return false;"><li class="blog-tags-item">All</li></a>
+        
+        
+          
+          
+          <a href onclick="filter('Writing'); return false;"><li class="blog-tags-item" id="Writing-item">
+            Writing
+          </li></a>
+        
+      </ul>
+
+    <main class="preview">
+
+      <div class="blog-list-container" id="all-container">
+
+          
+                           <a href="/better-creative-briefs">
+        <div class="object">
+            <div class="project"> Better Creative Briefs — Writing Propositions Is All About The Writing <span class="date">September 2017</span></div>
+        </div>
+          
+      </div>
+
+      
+        
+        
+        <div class="blog-list-container hidden" id="Writing-container">
+
+            
+              
+        <a href="/better-creative-briefs">
+         <div class="object">
+            <div class="project"> Better Creative Briefs — Writing Propositions Is All About The Writing <span class="date">September 2017</span></div>
+
+        </div>
+              
+            
+
+        </div>
+      
+
+        </main>
+
+
+<script>
+
+    function filter(tag) {
+  setActivetag(tag);
+  showContainer(tag);
+}
+
+function setActivetag(tag) {
+  // loop through all items and remove active class
+  var items = document.getElementsByClassName('blog-tags-item');
+  for(var i=0; i < items.length; i++) {
+    items[i].setAttribute('class', 'blog-tags-item');
+  }
+
+  // set the selected tag's item to active
+  var item = document.getElementById(tag + '-item');
+  if(item) {
+    item.setAttribute('class', 'blog-tags-item active');
+  }
+}
+
+function showContainer(tag) {
+  // loop through all lists and hide them
+  var lists = document.getElementsByClassName('blog-list-container');
+  for(var i=0; i < lists.length; i++) {
+    lists[i].setAttribute('class', 'blog-list-container hidden');
+  }
+
+  // remove the hidden class from the list corresponding to the selected tag
+  var list = document.getElementById(tag + '-container');
+  if(list) {
+    list.setAttribute('class', 'blog-list-container');
+  }
+}
+
+
+    </script>
+
+
+
+
+
+    </div>
+
+<section class="clear"></section>
+<footer>
+
+    <div class="newsletter"><h4>Sign up for my newsletter:</h4>
+    <form action="" method="post" target="popupwindow" onsubmit="window.open('', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:400px" name="email" id="tlemail" value "email"/><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" id/></form></p>
+</div>
+<section class="clear"></section>
+
+<div class="footer-nav">
+    <div class="left">
+        <section class="clear"></section>
+
+        <p>&copy <script language="javascript" type="text/javascript">
+var today = new Date()
+var year = today.getFullYear()
+document.write(year)
+            </script> Mark Pollard</p>
+        <p class="colophon"><a href="/contact">Contact</a> | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-and-conditions">Terms and Conditions</a></p>
+    </div>
+
+            <div class="right">
+                 <a href="https://www.linkedin.com/company-beta/2559165/"><i class="fab fa-linkedin"></i></a>
+
+                <a href="http://www.twitter.com/markpollard"><i class="fab fa-twitter-square"></i>
+                </a>
+
+                <a href="http://instagram.com/markpollard"><i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://itunes.apple.com/us/podcast/sweathead-with-mark-pollard/id1370723809"><i class="fab fa-itunes"></i></a>
+
+                <a href="https://www.youtube.com/channel/UCfeZ325IgWnG6z3b0k4AVbA"><i class="fab fa-youtube-square"></i>
+                </a>
+
+                <a href="http://eepurl.com/dscjW5"><i class="fas fa-envelope-square"></i>
+                </a>
+
+            </div>
+</div>
+    </footer>
+
+
+    </body>
+
+
+
+</html>
