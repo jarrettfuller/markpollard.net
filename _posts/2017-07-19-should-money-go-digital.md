@@ -13,7 +13,7 @@ What creative teams want, books on writing to read, and 3 techniques to get you 
 1. Propositions
 When I run training sessions and ask planners what they want to improve, “writing propositions” is the most common answer. Propositions are the middle bit of planning — in a phrase, they focus all the research into a single idea that seeks to solve a problem — but we’ll start there all the same. They complete a brief and, as many planners still write briefs that travel between departments, they are a crescendo in a planner’s day. I still remember printing my first creative brief and walking around the top floor of Leo Burnett in North Sydney, able to see the Harbour Bridge, thinking, “Yes, I’ve arrived.”
 
-![Propositions](../images/briefs_proposition.jpeg "Logo Title Text 1")
+![Propositions]({{ site.github.url }}/images/briefs_proposition.jpeg "Logo Title Text 1")
 
 If you work with creative teams, they want propositions to:
 1. Combine a truth about the company with a human insight
