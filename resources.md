@@ -1,6 +1,6 @@
 ---
 title: Mark Pollard
-layout: default
+layout: resources
 permalink: "/strategy-resources"
 ---
 

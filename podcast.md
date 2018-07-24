@@ -1,6 +1,6 @@
 ---
 title: Mark Pollard
-layout: default
+layout: podcast
 permalink: "/sweathead-podcast"
 ---
 
