@@ -2,10 +2,10 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Merriweather', serif;
   box-sizing: border-box;
-        font-size: 24px;
-    line-height: 1.3em;
+  font-size: 24px;
+  line-height: 1.3em;
 }
 body {
   padding-left: 150px;
@@ -13,7 +13,7 @@ body {
 p {
     font-size: 24px;
     line-height: 36px;
-    text-indent: 50px;
+    padding-bottom: 22px;
 }
 a {
   color: #000000;
@@ -44,6 +44,11 @@ ol {
   display: block;
 }
 /*------ TYPOGRAPHY --------*/
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 50px;
+}
 h2 {
    font-family: 'Anton', sans-serif;
     padding-top: 20px;
@@ -72,6 +77,7 @@ sidebar {
     padding-left: 100px;
     float: right;
     width: 40%;
+    font-size: 18px;
 }
 sidebar img {
     width: 100%;
@@ -96,6 +102,12 @@ sidebar ul {
     padding-bottom: -175px;
     width: 100%;
 }
+.hero-image {
+    width: 100%;
+}
+.hero-img image {
+    width: 100%;
+}
 
 /*----------- HEADER --------------*/
 header {
@@ -116,9 +128,8 @@ header {
 header h1 {
   font-weight: normal;
   color: #000000;
-/*  width: 61%;*/
   font-size: 16px;
-  padding-right: 100px;
+  padding: 0 100px 0 0;
   box-sizing: border-box;
     }
 nav {
@@ -144,16 +155,12 @@ nav li:first-child {
 .intro {
     padding: 50px 100px 150px 0px;
     font-size: 46px;
-        line-height: 65px;
+    line-height: 65px;
     text-indent: 100px;
 }
-/*
 .intro p {
-        font-size: 46px;
-        line-height: 65px;
-    text-indent: 100px;
+  text-indent: 100px;
 }
-*/
 .intro a {
     border-bottom: 1px solid rgba(0,0,0,.2);
     font-family: 'Anton', sans-serif;
@@ -162,32 +169,39 @@ nav li:first-child {
     padding: 2px;
 }
 .intro a:hover {
-    border-bottom-color: blue;
+    background-color: yellow;
+}
+.intro img {
+    padding: 0 10px 0 10px;
+
 }
 
 
 /*----------- ARCHIVE --------------*/
 .object {
-/*  border-top: 1px lightgrey solid;*/
-  padding: 25px 0px 25px 0px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: baseline;
+    padding: 35px 0px 45px 0px;
   width: 90%;
-  width: auto;
-  line-height: 20px;
-    font-size: 16px;
+/*  width: auto;*/
+    background-image: url(/images/black-line-01.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 .date {
   color: rgba(0,0,0,.3);
-    font-weight: normal;
-    font-size: 20px;
-    font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+    padding-bottom: 5px;
 }
 .project {
-    font-weight: normal;
-      font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    font-size: 36px;
+}
+.summary {
+    font-size: 18px;
+    padding-top: 5px;
 }
 .column-titles {
   padding: 25px 0px 25px 50px;
@@ -245,28 +259,40 @@ nav li:first-child {
 
 /* Share Bar */
 #share-bar {
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 50px;
 }
 
 /* Title */
+/*
 #share-bar h4 {
     margin-bottom: 5px;
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
 }
+*/
+#share-bar img {
+    width: 40%;
+    padding-left: 50px;
+}
 
 /* All buttons */
 .share-buttons {
-     background-image: url(/images/black-line-01.png);
+    background-image: url(/images/black-line-01.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
     padding-top: 10px;
     width: 95%;
+    font-size: 16px;
 }
 .share-buttons a {
-    display: block;
+/*    display: block;*/
+}
+.share-text {
+      font-family: 'Merriweather', serif;
+    font-weight: normal;
 }
 /* Each button */
 .share-button {
@@ -336,6 +362,37 @@ nav li:first-child {
 .fa-envelope:hover {
     color: #444444;
 }
+/*----------- WORK WITH ME --------------*/
+.work-with-me {
+    background-color: grey;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 95%;
+}
+.work-with-me img {
+    width: 100%;
+    margin: auto;
+}
+.work-with-me p {
+    text-align: center;
+    font-size: 30px;
+}
+/*----------- RESOURCES --------------*/
+.resources {
+    width: 30%;
+    float: left;
+    padding: 15px;
+    margin: 0 25px 50px 0;
+}
+.resources:hover {
+    background-color: black;
+    color: white;
+}
+.resources img {
+    width: 100%;
+}
+
 /*----------- RESPONSIVE VIDEO --------------*/
 .responsive-container {
   position: relative;
@@ -384,6 +441,13 @@ footer p a:hover {
 .newsletter h4 {
     font-size: 36px;
     font-weight: normal;
+}
+.newsletter p {
+    font-style: italic;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 24px;
 }
 .footer-nav {
     display: flex;

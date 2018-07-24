@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1>Resources</h1>
+
+{% for item in site.resources %}
+        <a href="{{ site.github.url }}{{ item.url }}">
+        <div class="resources">
+            <div class="resource_image"><img src="{{ item.image }}"></div>
+            <div class="resource_title">{{ item.title }}</div>
+        </div>
+    </a>
+    {% endfor %}
+
+<section class="clear"></section>
+
+
+

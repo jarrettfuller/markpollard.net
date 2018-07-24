@@ -2,10 +2,10 @@
 title: Mark Pollard
 timezone: UTC
 collections:
-  archive:
-    title: Archive
+  resources:
+    title: Resources
     output: true
-    permalink: "/archive/:title"
+    permalink: '/resources/:title'
   posts:
     title: Posts
     output: true
