@@ -2,8 +2,10 @@
 layout: default
 ---
 
+<sidebar>
+    <div id="sort"><img src="/images/sort.png"></div>
+
 <ul class="blog-tags-list clearfix">
-          <a href onclick="filter('all'); return false;"><li class="blog-tags-item">All</li></a>
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
           {% assign c = tag | first %}
@@ -12,8 +14,12 @@ layout: default
             {{ c }}
           </li></a>
         {% endfor %}
+    <a href onclick="filter('all'); return false;"><li class="blog-tags-item">All</li></a>
       </ul>
 
+</sidebar>
+
+<article>
     <main class="preview">
 
       <div class="blog-list-container" id="all-container">
@@ -87,7 +93,7 @@ function showContainer(tag) {
 
 
     </script>
-
+</article>
 
 
 

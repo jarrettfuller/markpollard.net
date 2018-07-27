@@ -3,7 +3,7 @@ title: "Resource 4"
 permalink: "/4"
 tags: Writing
 layout: article
-date: '2014-3-1'
+description: "When you start a new job, you’re an outsider."
 pubdate: March 2014
 image: 'https://cdn-images-1.medium.com/max/800/1*DNocd6MVtdcU1PH5nEIVSA.jpeg'
 ---

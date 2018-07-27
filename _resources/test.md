@@ -3,8 +3,7 @@ title: "Presentation Templates"
 permalink: "/how-to-structure-your-culture"
 tags: Writing
 layout: article
-date: '2014-3-1'
-pubdate: March 2014
+description: "When you start a new job, you’re an outsider."
 position: 3
 image: 'https://cdn-images-1.medium.com/max/800/1*DNocd6MVtdcU1PH5nEIVSA.jpeg'
 ---
