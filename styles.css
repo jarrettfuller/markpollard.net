@@ -118,14 +118,16 @@ sidebar ul {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    padding-bottom: 50px;
+/*    padding-bottom: 50px;*/
+/*
         background-image: url(/images/black-line-01.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+*/
 }
 .hero-image img {
-    width: 50%;
+    width: 100%;
 }
 
 /*----------- HEADER --------------*/
