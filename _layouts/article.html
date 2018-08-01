@@ -2,19 +2,22 @@
 layout: default
 ---
 
-<h4>{{ page.pubdate }}</h4>
+<div class="titles">
 <h3>{{ page.title }}</h3>
+<div class="summary">{{ page.summary }}</div>
+</div>
 
-<article>
+<hr>
+
+<article class="essay">
 
     {{ content }}
 
-</article>
-
-<sidebar>
 {% include share-bar.html %}
 
-</sidebar>
+</article>
+
+
 
 <section class="clear"></section>
 
