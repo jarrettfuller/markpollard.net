@@ -4,11 +4,8 @@
   margin: 0px;
   font-family: 'Merriweather', serif;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5em;
-}
-body {
-  padding-left: 175px;
 }
 p {
   padding-bottom: 20px;
@@ -28,10 +25,12 @@ ol {
   margin-left: 1.5em;
 }
 #container {
-    max-width: 1500px;
+    max-width: 1400px;
     padding-top: 50px;
     padding-bottom: 75px;
     padding-right: 50px;
+    padding-left: 50px;
+    margin: auto;
 }
 .clearfix::after {
   content: '';
@@ -48,25 +47,22 @@ h1 {
     font-weight: normal;
     padding-bottom: 50px;
     line-height: 50px;
-       font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
 }
 h2 {
-   font-family: 'Anton', sans-serif;
     padding-top: 20px;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 28px;
-    text-transform: uppercase;
 }
 h2:first-child {
     padding-top: 0px;
 }
 h3 {
     width: 80%;
-    font-size: 72px;
-    line-height: 76px;
-    font-weight: normal;
-    padding-bottom: 125px;
+    margin: auto;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 700;
+    text-align: center;
 }
 h4 {
     font-size: 24px;
@@ -76,17 +72,16 @@ h4 {
 }
 /*------ STRUCTURE --------*/
 article {
-    width: 65%;
+    width: 70%;
     float: right;
 }
 article img {
     width: 100%;
-    margin-left: -50px;
 }
 sidebar {
     padding-right: 100px;
     float: left;
-    width: 35%;
+    width: 30%;
     font-size: 18px;
 }
 sidebar img {
@@ -98,33 +93,24 @@ sidebar ul {
     padding-bottom: 50px;
 }
 .side-nav li a {
-    text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
-    font-size: 50px;
-    line-height: 50px;
     border-bottom: 0;
 }
 .side-nav li a:hover {
     padding-left: 25px;
 }
+/*
 .markers {
     position: absolute;
     padding-bottom: -175px;
     width: 100%;
 }
+*/
 .hero-image {
     width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-/*    padding-bottom: 50px;*/
-/*
-        background-image: url(/images/black-line-01.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-*/
 }
 .hero-image img {
     width: 100%;
@@ -132,36 +118,41 @@ sidebar ul {
 
 /*----------- HEADER --------------*/
 header {
-  padding: 50px;
-  background-color: black;
+  padding: 25px 50px 25px 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   width: 100%;
-  border-top: none;
-  font-weight: normal;
+max-width: 1400px;
+    margin: auto;
+background-image: url(http://www.jarrettfuller.com/markpollard.net/images/black-line-01.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 header h1 {
   font-weight: normal;
-  color: #000000;
-  font-size: 16px;
   padding: 0 100px 0 0;
-  box-sizing: border-box;
+    width: 30%;
     }
 nav {
-  font-size: 10px;
-  font-size: 16px;
-  font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 70%;
+    padding-left: 0px;
 }
 nav li {
-  list-style: none;
+    list-style: none;
     float: left;
     padding-left: 50px;
-    font-size: 24px;
 }
 nav li a{
-color: white;
+color: black;
+}
+nav li a:hover {
+    border-bottom: 1px solid #999999;
 }
 nav li:first-child {
   padding-left: 0px;
@@ -170,7 +161,6 @@ nav li:first-child {
 
 /*----------- HOMEPAGE --------------*/
 .intro {
-    padding: 50px 100px 150px 0px;
     font-size: 46px;
     line-height: 65px;
     text-indent: 100px;
@@ -198,21 +188,16 @@ nav li:first-child {
     padding: 0px 0px 50px 0px;
   width: 100%;
 }
-.date {
-  color: rgba(0,0,0,.3);
-  font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-    padding-bottom: 5px;
-}
 .project {
-    font-weight: normal;
-    line-height: 52px;
-    font-size: 48px;
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 32px;
 }
 .summary {
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 5px;
+    font-style: italic;
+        color: #999999;
 }
 .hidden {
     display: none!important;
@@ -229,9 +214,6 @@ nav li:first-child {
     }
 .blog-tags-item {
     text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
-    font-size: 50px;
-    line-height: 50px;
     border-bottom: 0;
 }
 .blog-tags-item:hover {
@@ -246,7 +228,27 @@ nav li:first-child {
     padding-bottom: 10px;
 }
 
-/* Share Bar */
+/*----------- ARTICLES --------------*/
+.titles {
+    text-align: center;
+}
+hr {
+    width: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    padding: 3px;
+}
+.essay {
+    width: 60%;
+    margin: auto;
+    float: none;
+}
+
+/*----------- SHARE --------------*/
 #share-bar {
     margin-bottom: 50px;
 }
@@ -409,14 +411,12 @@ nav li:first-child {
     display: flex;
     width: 100%;
     text-align: center;
-    color: white;
+      max-width: 1400px;
+    margin: auto;
 }
 .newsletter {
     padding: 50px;
-    background-color: #222222;
     flex: 1;
-    background-image: url(http://www.jarrettfuller.com/markpollard.net/images/footer_bg.png);
-    background-size: cover;
 }
 .newsletter h4 {
     font-size: 36px;
@@ -437,20 +437,18 @@ form {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: solid 3px white;
+    border: 1px solid black;
     width: 100%;
 }
 input {
-    border: 2px solid white;
+    border: 1px solid black;
     text-transform: uppercase;
     padding: 10px;
     margin-top: 10px;
     margin-left: 1%;
-        color: white;
-    font-family: 'Anton', sans-serif;
-    font-size: 24px;
+    background-color: white;
+    font-size: 18px;
     letter-spacing: 1px;
-    background-color: #222222;
 }
 .work-with-me {
     background-image: url(http://www.jarrettfuller.com/markpollard.net/images/mighty-jungle.png);
@@ -470,16 +468,13 @@ input {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: black;
-  color:white;
-  padding: 50px 50px 50px 50px;
+  padding: 25px 50px 25px 50px;
   width: 100%;
-  width: auto;
-  position: sticky;
-  bottom: 0;
+  max-width: 1400px;
+    margin: auto;
   display: flex;
-      font-size: 16px;
-    align-content: center;
+  font-size: 16px;
+  align-content: center;
 }
 footer p {
     font-size: 16px;
@@ -492,10 +487,10 @@ footer p a:hover {
     border-bottom: 1px solid grey;
 }
 footer .fab {
-    font-size: 36px;
+    font-size: 24px;
 }
 footer .fas {
-    font-size: 36px;
+    font-size: 24px;
 }
 .left {
   flex: 1;
@@ -503,22 +498,20 @@ footer .fas {
 }
 .right {
   flex: 1;
-    width: 50%;
+  width: 50%;
   text-align: right;
+    font-size: 16px;
 }
 footer li {
     padding-left: 25px;
-    font-size: 24px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     float: left;
     list-style: none;
 }
-footer a {
-    color: white;
-}
 footer .fa-linkedin:hover {
-    color: white;
+    color: black;
 }
 .colophon {
     font-size: 16px;
@@ -539,5 +532,11 @@ TABLET
 MOBILE
 ----------------------------------- */
 @media only screen and (max-width: 715px) {
-
+article {
+    width: 100%;
+}
+sidebar {
+    padding-right: 0px;
+    width: 100%;
+}
 }

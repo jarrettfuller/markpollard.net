@@ -27,7 +27,6 @@ layout: default
           {% for post in site.posts %}
             <a href="{{ site.github.url }}{{ post.url }}">
         <div class="object">
-            <div class="date">{{ post.pubdate }}</div>
             <div class="project"> {{ post.title }} </div>
             <div class="summary">{{ post.summary }}</div>
                                </div></a>
@@ -43,7 +42,6 @@ layout: default
               {% if post.tags contains c %}
                         <a href="{{ site.github.url }}{{ post.url }}">
         <div class="object">
-            <div class="date">{{ post.pubdate }}</div>
             <div class="project"> {{ post.title }} </div>
             <div class="summary">{{ post.summary }}</div>
                                </div></a>
