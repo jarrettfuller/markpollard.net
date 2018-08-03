@@ -1,10 +1,24 @@
 <header>
-    <h1><a href="{{ site.github.url }}/"><img src="{{ site.github.url }}/images/name_black.png" height="22px"></a></h1>
 
-        <nav><ul>
+    <sidebar class="logo">
+            <!-- This HTML makes a little button to show and hide -->
+        <button class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <a href="{{ site.github.url }}/"><img src="{{ site.github.url }}/images/name_black.png" height="22px"></a></sidebar>
+
+    <article><h1>{{ page.title}}</h1></article>
+
+
+        <nav>
+                <ul>
                 <li><a href="{{ site.github.url }}/strategy-articles">Articles</a></li>
                 <li><a href="{{ site.github.url }}/strategy-resources">Resources</a></li>
                 <li><a href="{{ site.github.url }}/sweathead-podcast">Podcast</a></li>
                 <li><a href="{{ site.github.url }}/about-mark-pollard">About</a></li>
-             </ul></nav>
+             </ul>
+    </nav>
     </header>
