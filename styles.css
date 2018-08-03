@@ -83,7 +83,7 @@ article img {
     width: 100%;
 }
 sidebar {
-    padding-right: 100px;
+    padding-right: 50px;
     float: left;
     width: 30%;
     font-size: 18px;
@@ -97,7 +97,12 @@ sidebar ul {
 .side-nav li a:hover {
     border-bottom: 1px solid black;
 }
-
+.portrait {
+    border-radius: 50%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*----------- HEADER --------------*/
 header {
@@ -114,8 +119,8 @@ header {
 }
 header .logo {
   font-weight: normal;
-  padding: 15px 5% 15px 15px;
-  width: 25%;
+  padding: 15px 15px 15px 15px;
+  width: 100%;
   float: left;
   background-color: #d4d4d4;
   display: flex;
@@ -165,25 +170,8 @@ header nav ul {
     z-index: 99;
     background: #d4d4d4;
     text-align: center;
-/*
-    border-left: 1px white solid;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
-*/
 }
 header nav ul li {
-/*
-    font-size: 20px;
-    text-transform: uppercase;
-    padding-top: 5px;
-        padding-left: 15px;
-    list-style: none;
-    border-bottom: 1px white solid;
-    float: left;
-    margin-right: 10px;
-    margin-left: 10px;
-    text-align: center;
-    display: inline;
-*/
         font-size: 20px;
         text-align: center;
         padding-top: 10px;
@@ -265,9 +253,11 @@ header nav ul li {
     margin-left: 0px;
     }
 #sort {
-        width: 40%;
-    padding-left: 50px;
-    padding-bottom: 10px;
+    width: 30%;
+    padding-bottom: 5px;
+        border: 0px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0);
+        margin-bottom: 0px;
 }
 
 /*----------- ARTICLES --------------*/
@@ -442,9 +432,13 @@ hr {
     background-position: top;
     background-size: contain;
     padding-top: 10px;
+    color: lightgrey;
 }
-.podcast-sidebar p a i {
-    font-size: 36px;
+.podcast-sidebar img {
+    border: 1px solid lightgrey;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    width: 100%;
+    margin-bottom: 25px;
 }
 
 /*----------- RESPONSIVE VIDEO --------------*/
