@@ -23,6 +23,27 @@
 
 <section class="clear"></section>
 {% include footer.html %}
+
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+        <script>
+        $(document).ready(function() {
+            $('button.toggle').click(function() {
+                $('header ul').slideToggle();
+            });
+        });
+
+     /*   $('window').resize(funtion() {
+            ww = $(window).width();
+            if (ww > 800) {
+                $('header ul').show();
+            } else {
+                $('header ul').hide();
+            };
+                               }); */
+
+        </script>
+
     </body>
 
 

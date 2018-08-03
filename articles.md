@@ -1,5 +1,5 @@
 ---
-title: Archive
+title: Articles
 layout: archive
 permalink: "/strategy-articles"
 ---
