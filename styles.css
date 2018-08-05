@@ -172,21 +172,23 @@ header nav ul {
     text-align: center;
 }
 header nav ul li {
-        font-size: 20px;
-        text-align: center;
-        padding-top: 10px;
-        padding-left: 0px;
-        list-style: none;
-        border-bottom: 0px white solid;
-        float: none;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 0px;
+    list-style: none;
+    float: none;
     display: inline-flex;
-        margin-right: 10px;
+    margin-right: 10px;
     margin-left: 10px;
-        border-bottom: 1px white solid;
-        font-size: 20px;
+    font-size: 20px;
     text-transform: uppercase;
     padding-top: 4px;
     padding-bottom: 4px;
+    border-bottom: 1px #d4d4d4 solid;
+}
+header nav ul li:hover {
+    border-bottom: 1px white solid;
 }
 
 /*----------- HOMEPAGE --------------*/
@@ -201,7 +203,7 @@ header nav ul li {
 .intro a {
     border-bottom: 1px solid rgba(0,0,0,.2);
     padding: 2px;
-    font-size: 46px;
+/*    font-size: 46px;*/
 }
 .intro a:hover {
     background-color: yellow;
@@ -244,20 +246,16 @@ header nav ul li {
     }
 .blog-tags-item {
     text-transform: uppercase;
-    border-bottom: 0;
 }
 .blog-tags-item:hover {
-    padding-left: 25px;
-    }
-.blog-tags-item:first-child {
-    margin-left: 0px;
+    text-decoration: underline;
     }
 #sort {
     width: 30%;
     padding-bottom: 5px;
-        border: 0px;
-        box-shadow: 0 0 10px 0 rgba(0,0,0,0);
-        margin-bottom: 0px;
+    border: 0px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0);
+    margin-bottom: 0px;
 }
 
 /*----------- ARTICLES --------------*/
@@ -293,6 +291,11 @@ hr {
 .about-footer:hover {
     opacity: 1;
 }
+.related-posts {
+    padding-top: 25px;
+    text-align: center;
+}
+.related-posts h4 { padding-bottom: 25px;}
 
 /*----------- SHARE --------------*/
 #share-bar {
@@ -397,15 +400,20 @@ hr {
 }
 
 /*----------- RESOURCES --------------*/
-.resources {
+.resource-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.resource-list a{
     width: 30%;
     float: left;
-    margin: 0 25px 50px 0;
+    margin: 0 50px 50px 0;
     background-color: rgba(0,0,0,.1);
 }
 .resource_title {
     padding: 25px 25px 0 25px;
     font-weight: 700;
+    font-size: 24px;
 }
 .resource_description {
     padding: 0px 25px 25px 25px;
@@ -414,7 +422,6 @@ hr {
 .resources:hover {
     background-color: rgba(0,0,0,.5);
     color: white;
-    transition: .5s;
 }
 .resources img {
     width: 100%;
@@ -525,9 +532,6 @@ footer {
   align-content: center;
     opacity: .3;
 }
-footer:hover {
-    opacity: 1;
-}
 footer p {
     font-size: 16px;
 }
@@ -586,20 +590,23 @@ MOBILE
 @media only screen and (max-width: 1024px) {
 p {font-size: 16px;}
 #container { padding: 25px 25px 50px 25px;}
+    h1 {padding-bottom: 15px;}
 h3 {width: 100%; font-size: 28px; line-height: 32px;}
 header { padding: 0px 0px 0px 0px; display: block;}
 header .logo { padding: 15; width: 100%; }
-    header article {
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
+header article { text-align: center; padding-top: 20px; padding-bottom: 10px; }
 header nav { width: 20%; float: right; font-size: 30px;}
 .intro { font-size: 30px; line-height: 34px;}
 article { width: 100%; }
 sidebar { padding-right: 0px; width: 100%; }
 .essay { width: 100%; }
 .summary {font-size: 18px; line-height: 22px;}
+.about-footer { padding-top: 25px; display: block; opacity: .5; }
+.about-footer img {display: none; }
+.about-footer:hover {opacity: .5;}
+    .blog-tags-list {padding-bottom: 50px;}
+.blog-tags-item {float: left; padding-right: 15px;}
+
 /*----------- MOBILE NAV --------------*/
 header nav ul {
     display: none;
@@ -615,7 +622,7 @@ header nav ul {
 /*    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);*/
 }
 header nav ul li {
-    font-size: 20px;
+    font-size: 25px;
         text-align: center;
         padding-top: 10px;
         padding-left: 0px;
@@ -623,6 +630,21 @@ header nav ul li {
         border-bottom: 0px white solid;
         float: none;
     display: block;
+}
+    header nav ul li:hover {border-bottom-width: 0px;}
+/*----------- RESOURCES --------------*/
+.resource-list {display: block;}
+.resource-list a{ width: 100%;}
+.resource_title {
+    font-size: 22px;
+}
+.resource_description {
+    padding: 0px 25px 25px 25px;
+    font-size: 16px;
+}
+.resources:hover {
+    background-color: rgba(0,0,0,.1);
+    color: black;
 }
 
 /*----------- Footer --------------*/

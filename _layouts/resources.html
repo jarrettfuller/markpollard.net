@@ -3,6 +3,7 @@ layout: default
 title: Resources
 ---
 
+<div class="resource-list">
 {% for item in site.resources %}
         <a href="{{ site.github.url }}{{ item.url }}">
         <div class="resources">
@@ -12,7 +13,7 @@ title: Resources
         </div>
     </a>
     {% endfor %}
-
+</div>
 <section class="clear"></section>
 
 
