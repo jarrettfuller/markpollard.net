@@ -2,6 +2,7 @@
 title: Articles
 layout: archive
 permalink: "/strategy-articles"
+h1: Strategy Articles
 ---
 
 <main class="preview" id="all-container">

@@ -2,6 +2,7 @@
 title: Make First Contact
 permalink: "/contact"
 layout: about
+h1: Make First Contact
 ---
 
 <form action="https://getsimpleform.com/messages?form_api_token=<form_api_token>" method="post">
