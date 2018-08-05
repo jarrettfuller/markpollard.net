@@ -2,6 +2,7 @@
 title: About Mark Pollard
 permalink: "/about-mark-pollard"
 layout: about
+h1: About Mark Pollard
 ---
 
 Greetings and thanks for checking out my writenings.
