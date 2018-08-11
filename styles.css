@@ -2,11 +2,8 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Lora', serif;
   box-sizing: border-box;
-}
-body {
-    border-top: 5px solid #d4d4d4;
 }
 p {
   padding-bottom: 20px;
@@ -22,19 +19,29 @@ a:img {
 }
 ul {
   list-style: none inside;
+    font-size: 18px;
 }
+li {font-size: 18px;}
 ol {
   list-style-position: outside;
   margin-left: 1.5em;
 }
 #container {
     max-width: 1600px;
-    padding-top: 100px;
-    padding-bottom: 75px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: auto;
+    padding-top: 175px;
+}
+/*
+#main {
+    padding-top: 150px;
+        max-width: 1600px;
     padding-right: 50px;
     padding-left: 50px;
     margin: auto;
 }
+*/
 .clearfix::after {
   content: '';
   clear: both;
@@ -46,11 +53,9 @@ ol {
 }
 /*------ TYPOGRAPHY --------*/
 h1 {
-    text-transform: uppercase;
     color: #999999;
     font-weight: normal;
     font-size: 20px;
-    letter-spacing: 1px;
 }
 h2 {
     padding-top: 20px;
@@ -65,7 +70,7 @@ h3 {
     margin: auto;
     font-size: 48px;
     line-height: 52px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
 }
 h4 {
@@ -74,28 +79,39 @@ h4 {
     color: rgba(0,0,0,.5);
     padding-bottom: 5px;
 }
+h5 {
+    font-size: 18px;
+}
 /*------ STRUCTURE --------*/
 article {
-    width: 70%;
-    float: right;
+    width: 60%;
+    float: left;
 }
 article img {
     width: 100%;
 }
 sidebar {
-    padding-right: 50px;
-    float: left;
-    width: 30%;
+    padding-left: 50px;
+    float: right;
+    width: 35%;
     font-size: 18px;
 }
 sidebar ul {
     padding-bottom: 50px;
 }
+.side-nav {
+    width: 50%;
+        font-size: 20px;
+}
 .side-nav li a {
     border-bottom: 0;
+    font-size: 20px;
 }
 .side-nav li a:hover {
     border-bottom: 1px solid black;
+}
+.sort {
+    column-count: 3;
 }
 .portrait {
     border-radius: 50%;
@@ -106,31 +122,42 @@ sidebar ul {
 
 /*----------- HEADER --------------*/
 header {
-  padding: 0px 50px 15px 50px;
+  padding: 15px 0px 25px 0px;
+    margin-bottom: 50px;
+  width: 100%;
+    position: fixed;
+    background-color: white;
 /*
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+        background-image: url(http://www.jarrettfuller.com/markpollard.net/images/black-line-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
 */
-  align-items: center;
-  width: 100%;
-  max-width: 1600px;
-  margin: auto;
 }
-header .logo {
+header #container {
+    width: 100%;
+    padding-top: 0px;
+    display: flex;
+/*    align-items: center;*/
+}
+.logo {
+
   font-weight: normal;
-  padding: 15px 15px 15px 15px;
-  width: 100%;
-  float: left;
-  background-color: #d4d4d4;
-  display: flex;
-  align-items: center;
+  padding: 0px 15px 5px 0px;
+        width: 40%;
     }
-header article {
-padding-top: 15px;
+nav {
+    font-size: 42px;
+    line-height: 40px;
+    font-weight: 700;
+
 }
-header nav ul {
-    display: none;
+nav a:hover {
+    text-decoration: underline;
+}
+header .page-title {
+    width: 50%;
+    float: right;
 }
 header button.toggle {
     background: rgba(255,255,255,.0);
@@ -140,8 +167,12 @@ header button.toggle {
     border: none;
     outline: 0;
     margin-right: 15px;
-    display: block;
+    display: none;
 }
+.nav-up {
+    top: -147px;
+}
+/*
 header button.toggle:active {
     background: rgba(255,255,255,.0);
 }
@@ -160,36 +191,7 @@ header button.toggle:focus {
     margin-top: 4px;
     margin-bottom: 4px;
 }
-header nav ul {
-    position:absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    padding: 15px;
-    z-index: 99;
-    background: #d4d4d4;
-    text-align: center;
-}
-header nav ul li {
-    font-size: 20px;
-    text-align: center;
-    padding-top: 10px;
-    padding-left: 0px;
-    list-style: none;
-    float: none;
-    display: inline-flex;
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-bottom: 1px #d4d4d4 solid;
-}
-header nav ul li:hover {
-    border-bottom: 1px white solid;
-}
+*/
 
 /*----------- HOMEPAGE --------------*/
 .intro {
@@ -203,6 +205,7 @@ header nav ul li:hover {
 .intro a {
     border-bottom: 1px solid rgba(0,0,0,.2);
     padding: 2px;
+    font-weight: 700;
 /*    font-size: 46px;*/
 }
 .intro a:hover {
@@ -211,22 +214,27 @@ header nav ul li:hover {
 }
 .intro img {
     padding: 0 10px 0 10px;
-
 }
 
 
 /*----------- ARCHIVE --------------*/
+main {
+    width: 60%;
+}
 .object {
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 55px 0px;
   width: 100%;
 }
 .project {
-    font-weight: 700;
-    line-height: 36px;
-    font-size: 32px;
+    font-weight: 400;
+    line-height: 52px;
+    font-size: 48px;
+}
+.project:hover {
+    text-decoration: underline;
 }
 .summary {
-    font-size: 20px;
+    font-size: 24px;
     padding-top: 5px;
     font-style: italic;
         color: #999999;
@@ -245,7 +253,6 @@ header nav ul li:hover {
     background-size: contain;
     }
 .blog-tags-item {
-    text-transform: uppercase;
 }
 .blog-tags-item:hover {
     text-decoration: underline;
@@ -303,7 +310,7 @@ hr {
     padding-top: 50px;
 }
 #share-bar p {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 #share-bar img {
     width: 15%;
@@ -466,18 +473,10 @@ hr {
 /*----------- CTA --------------*/
 .cta {
     display: flex;
-    width: 100%;
     text-align: center;
-      max-width: 1400px;
-    margin: auto;
-        opacity: .3;
     background-image: url(http://www.jarrettfuller.com/markpollard.net/images/black-line-01.png);
     background-repeat: no-repeat;
-    background-position: top;
     background-size: contain;
-}
-.cta:hover {
-    opacity: 1;
 }
 .newsletter {
     padding: 50px;
@@ -487,7 +486,7 @@ hr {
     font-size: 36px;
     font-weight: normal;
 }
-.newsletter p {
+.cta p {
     font-style: italic;
     width: 80%;
     margin: auto;
@@ -523,45 +522,46 @@ input {
 
 /*----------- FOOTER --------------*/
 footer {
-  padding: 25px 50px 25px 50px;
+  padding: 25px 0px 25px 0px;
+    background-color: rgba(212,212,212,1);
   width: 100%;
-  max-width: 1400px;
     margin: auto;
-  display: flex;
   font-size: 16px;
   align-content: center;
-    opacity: .3;
+    color: #666666;
+    margin-top: 50px;
+    opacity: .6;
 }
+footer:hover {
+/*    color: black;*/
+    opacity: 1;
+        background-color: rgba(212,212,212,.6);
+}
+footer #container { padding-top: 0px;}
 footer p {
     font-size: 16px;
 }
 footer p a {
     border-bottom: 1px solid white;
       font-size: 16px;
+        color: #666666;
 }
 footer p a:hover {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #666666;
+      font-size: 16px;
+        color: black;
 }
 footer .fab {
     font-size: 24px;
+        color: #666666;
 }
 footer .fas {
     font-size: 24px;
-}
-.left {
-  flex: 1;
-  width: 50%;
-}
-.right {
-  flex: 1;
-  width: 50%;
-  text-align: right;
-    font-size: 16px;
+        color: #666666;
 }
 footer li {
     padding-left: 25px;
     font-size: 16px;
-    text-transform: uppercase;
     font-weight: bold;
     float: left;
     list-style: none;
@@ -569,11 +569,30 @@ footer li {
 footer .fa-linkedin:hover {
     color: black;
 }
-.colophon {
-    font-size: 16px;
+.footer-nav {
+    display: flex;
+        padding-bottom: 50px;
 }
-.colophon a {
-    padding-top: 0px;
+.footer-nav-block {
+    flex: 1;
+    width: 25%;
+    padding-right: 25px;
+}
+.colophon {
+    display: flex;
+    background-image: url(http://www.jarrettfuller.com/markpollard.net/images/black-line-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 25px;
+}
+.left {
+  flex: left;
+  width: 50%;
+}
+.right {
+  flex: right;
+  width: 50%;
+  text-align: right;
     font-size: 16px;
 }
 
@@ -589,22 +608,36 @@ MOBILE
 ----------------------------------- */
 @media only screen and (max-width: 1024px) {
 p {font-size: 16px;}
-#container { padding: 25px 25px 50px 25px;}
+#container { padding: 200px 25px 25px 25px;}
     h1 {padding-bottom: 15px;}
 h3 {width: 100%; font-size: 28px; line-height: 32px;}
-header { padding: 0px 0px 0px 0px; display: block;}
+header { padding: 15px 0px 15px 0px; display: block;}
 header .logo { padding: 15; width: 100%; }
 header article { text-align: center; padding-top: 20px; padding-bottom: 10px; }
-header nav { width: 20%; float: right; font-size: 30px;}
+header nav {
+    width: 100%;
+    font-size: 28px;
+    line-height: 30px;
+    padding-bottom: 25px;
+    }
+    header #container {display: block; padding-bottom: 0px; }
+    .side-nav {width: 100%; }
+.side-nav li {float: left; padding-right: 10px;}
+.sort {column-count: 1;}
 .intro { font-size: 30px; line-height: 34px;}
+
 article { width: 100%; }
-sidebar { padding-right: 0px; width: 100%; }
+sidebar { padding-left: 0px; width: 100%; }
+
+    main {width: 100%; }
 .essay { width: 100%; }
+    .titles {margin-top: -50px;}
+    .project { font-size: 36px; line-height: 40px;}
 .summary {font-size: 18px; line-height: 22px;}
 .about-footer { padding-top: 25px; display: block; opacity: .5; }
 .about-footer img {display: none; }
 .about-footer:hover {opacity: .5;}
-    .blog-tags-list {padding-bottom: 50px;}
+.blog-tags-list {padding-bottom: 50px;}
 .blog-tags-item {float: left; padding-right: 15px;}
 
 /*----------- MOBILE NAV --------------*/
@@ -632,6 +665,7 @@ header nav ul li {
     display: block;
 }
     header nav ul li:hover {border-bottom-width: 0px;}
+    .nav-up {    top: -200px;}
 /*----------- RESOURCES --------------*/
 .resource-list {display: block;}
 .resource-list a{ width: 100%;}
@@ -651,7 +685,20 @@ header nav ul li {
 .cta { display: block; }
 .newsletter {width: 100%; }
 .work-with-me {width: 100%;}
-footer {display: block; opacity: 1; padding: 25px }
+footer {display: block; opacity: 1; padding: 0px }
+    footer:hover {background-color: rgba(212,212,212,1);}
+    footer #container {padding-top: 20px;}
+    .colophon {display: block;}
 .left {width: 100%;}
 .right {width: 100%; text-align: left;}
+.footer-nav {
+    display: block;
+    padding-bottom: 20px;
+    }
+    .footer-nav-block {
+    width: 100%;
+    padding-right: 0px;
+        padding-bottom: 20px;
+
+}
 }

@@ -1,7 +1,9 @@
 ---
 title: "What’s Your Problem? (And Why Problems Help Creative Thinking)"
 permalink: "/whats-your-problem"
-tags: Creativity
+tags:
+- Creativity
+- Strategy
 layout: article
 summary: "If we’re all creative, why do only some people get to say they are creative?"
 ---
