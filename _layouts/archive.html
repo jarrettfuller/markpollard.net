@@ -1,11 +1,20 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+ {% include head.html %}
 
-<sidebar>
-    <img src="{{ site.github.url }}/images/sort.png" id="sort">
+    <body id="top">
+       <header>
+            <div id="container">
+                <div class="logo">
+{% include logo.html %}
+{% include nav.html %}
+            </div>
 
-<ul class="blog-tags-list clearfix">
+
+    <ul class="side-nav sort">
+<!-- <img src="{{ site.github.url }}/images/sort.png" id="sort">-->
+
+<!--<ul class="blog-tags-list clearfix">-->
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
           {% assign c = tag | first %}
@@ -15,11 +24,14 @@ layout: default
           </li></a>
         {% endfor %}
     <a href onclick="filter('all'); return false;"><li class="blog-tags-item">All</li></a>
-      </ul>
+<!--      </ul>-->
+</ul>
+</div>
+        </header>
 
-</sidebar>
 
-<article>
+        <div id="container">
+
     <main class="preview">
 
       <div class="blog-list-container" id="all-container">
@@ -91,7 +103,15 @@ function showContainer(tag) {
 
 
     </script>
-</article>
+
+</div>
+
+<section class="clear"></section>
+{% include footer.html %}
+
+{% include scripts.html %}
+    </body>
 
 
 
+</html>

@@ -1,10 +1,30 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+    <body id="top">
+        <header>
+            <div id="container">
+                <div class="logo">
+{% include logo.html %}
+</div>
 
-<div class="intro">
+            <h1>Strategy is Your Words</h1>
+                </div>
 
+        </header>
 
-    {{ content }}
-
+<div id="container">
+    <div class="intro">
+      {{ content }}
     </div>
+</div>
+
+<section class="clear"></section>
+{% include footer.html %}
+
+        {% include scripts.html %}
+    </body>
+
+
+
+</html>

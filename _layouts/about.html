@@ -1,16 +1,26 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+    <body id="top">
+       <header>
+            <div id="container">
+                <div class="logo">
+{% include logo.html %}
+{% include nav.html %}
+            </div>
 
-<sidebar>
-<img src="https://media.licdn.com/dms/image/C4D03AQFITkFY5W7V9Q/profile-displayphoto-shrink_200_200/0?e=1538611200&v=beta&t=oVIniNeiLOlSEfM4-0RRlSET1c3XaiO5sWiBNegs0r4" class="portrait">
 
-<ul class="side-nav">
+    <ul class="side-nav">
     <li><a href="{{ site.github.url }}/mark-pollard-biography">Biography</a></li>
     <li><a href="{{ site.github.url }}/work-with-me">Work With Me</a></li>
     <li><a href="{{ site.github.url }}/contact">Contact</a></li>
 </ul>
+</div>
+        </header>
 
+<div id="container">
+<sidebar>
+<img src="https://media.licdn.com/dms/image/C4D03AQFITkFY5W7V9Q/profile-displayphoto-shrink_200_200/0?e=1538611200&v=beta&t=oVIniNeiLOlSEfM4-0RRlSET1c3XaiO5sWiBNegs0r4" class="portrait">
 
 </sidebar>
 
@@ -19,7 +29,15 @@ layout: default
 {{ content }}
 
 </article>
+    </div>
+
+<section class="clear"></section>
+{% include footer.html %}
+
+{% include scripts.html %}
+
+    </body>
 
 
 
-
+</html>
