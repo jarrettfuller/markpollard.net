@@ -1,7 +1,8 @@
 ---
 title: "Better Creative Briefs — Writing Propositions Is All About The Writing"
 permalink: "/better-creative-briefs"
-tags: Writing
+tags:
+- Writing
 layout: article
 date: '2017-9-5'
 pubdate: September 2017
