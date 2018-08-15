@@ -5,13 +5,28 @@ layout: about
 h1: Make First Contact
 ---
 
-<form action="https://getsimpleform.com/messages?form_api_token=<form_api_token>" method="post">
+<h1>Make First Contact</h1>
 
-  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='{{ site.github.url }}/contact/contact-made.html' />
+<div id="wufoo-m1ocsn920dlodm4">
+Fill out my <a href="https://jarrettfuller.wufoo.com/forms/m1ocsn920dlodm4">online form</a>.
+</div>
 
-  <!-- all your input fields here.... -->
-  <input type='text' name='test' />
+<script type="text/javascript">var m1ocsn920dlodm4;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'jarrettfuller',
+'formHash':'m1ocsn920dlodm4',
+'autoResize':true,
+'height':'517',
+'async':true,
+'host':'wufoo.com',
+'header':'hide',
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { m1ocsn920dlodm4 = new WufooForm();m1ocsn920dlodm4.initialize(options);m1ocsn920dlodm4.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
 
-  <input type='submit' value='Test form' />
-</form>
+
+

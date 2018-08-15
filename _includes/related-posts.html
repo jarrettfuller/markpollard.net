@@ -1,8 +1,8 @@
 <div class="related-posts">
 
-<hr>
-<h4>Want more? You might also enjoy:</h4>
+<img src="/images/want-more-05.png">
 
+<div class="related-post-list">
 {% assign maxRelated = 4 %}
 {% assign minCommonTags =  1 %}
 {% assign maxRelatedCounter = 0 %}
@@ -23,8 +23,9 @@
     {% endfor %}
 
     {% if sameTagCount >= minCommonTags %}
-      <div>
-      <div class="project"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+      <div class="related-post">
+          <img src="{{ post.img }}">
+      <a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
             <div class="summary">{{ post.summary }}</div>
       </div>
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
@@ -35,4 +36,5 @@
 
   {% endfor %}
 
+    </div>
 </div>

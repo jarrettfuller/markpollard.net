@@ -6,6 +6,7 @@ tags:
 - Strategy
 layout: article
 summary: "If we’re all creative, why do only some people get to say they are creative?"
+
 ---
 
 The word “problem” is a good word. However, some people don’t like this word — they don’t like to use it, and they don’t like other people using it. People who don’t like other people using this word call themselves “Optimists” and they believe that anyone who uses the word “problem” is sad, depressed, and suicidal. These people say: “We don’t have a problem; we have an opportunity.” And they usually cut you off mid-sentence to make a stand for positivity and to make sure you know that you can’t get away with thinking… well, anything.

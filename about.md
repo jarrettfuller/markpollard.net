@@ -3,6 +3,7 @@ title: About Mark Pollard
 permalink: "/about-mark-pollard"
 layout: about
 h1: About Mark Pollard
+image: https://media.licdn.com/dms/image/C4D03AQFITkFY5W7V9Q/profile-displayphoto-shrink_200_200/0?e=1538611200&v=beta&t=oVIniNeiLOlSEfM4-0RRlSET1c3XaiO5sWiBNegs0r4
 ---
 
 Greetings and thanks for checking out my writenings.

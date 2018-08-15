@@ -20,7 +20,10 @@
 
 <div id="container">
 <sidebar>
-<img src="https://media.licdn.com/dms/image/C4D03AQFITkFY5W7V9Q/profile-displayphoto-shrink_200_200/0?e=1538611200&v=beta&t=oVIniNeiLOlSEfM4-0RRlSET1c3XaiO5sWiBNegs0r4" class="portrait">
+
+{% if page.image %}
+        <img src={{page.image}} class="portrait">
+{% endif %}
 
 </sidebar>
 
