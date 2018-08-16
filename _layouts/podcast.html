@@ -19,7 +19,16 @@ layout: default
 
 <div class="podcast-description">{{ page.description }}</div>
 
+{% if page.featured %}
+ <h2>Featured Episode</h2>
+<iframe src="{{page.featured}}" width="100%" frameborder="0" scrolling="no"></iframe>
+{% endif %}
+
+ <h2 class="popular">Popular Episodes</h2>
+
+    <div class="podcast">
 {{ content }}
+        </div>
 
 </article>
 
