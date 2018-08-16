@@ -116,7 +116,7 @@ sidebar ul {
 }
 .portrait {
 /*    border-radius: 50%;*/
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -478,6 +478,25 @@ hr {
 }
 .podcast-sidebar .fab {
     font-size: 24px;
+}
+.podcast {
+        background-image: url(http://www.jarrettfuller.com/markpollard.net/images/black-line-01.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    padding-top: 10px;
+}
+.podcast li {
+    line-height: 30px;
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.podcast li:hover {
+    text-decoration: underline;
+}
+.popular {
+    padding-top: 25px;
 }
 
 /*----------- RESPONSIVE VIDEO --------------*/

@@ -1,6 +1,6 @@
 <div class="related-posts">
 
-<img src="/images/want-more-05.png">
+<img src="{{ site.github.url }}/images/want-more-05.png">
 
 <div class="related-post-list">
 {% assign maxRelated = 4 %}
@@ -24,7 +24,6 @@
 
     {% if sameTagCount >= minCommonTags %}
       <div class="related-post">
-          <img src="{{ post.img }}">
       <a href="{{ site.baseurl }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
             <div class="summary">{{ post.summary }}</div>
       </div>
