@@ -200,24 +200,28 @@ header button.toggle:focus {
 */
 
 /*----------- HOMEPAGE --------------*/
+.intro {
+    width: 70%;
+    margin: auto;
+}
 .intro p {
-        font-size: 46px;
-    line-height: 65px;
-    text-indent: 150px;
+    font-size: 48px;
+    line-height: 58px;
+    text-indent: 100px;
     padding-bottom: 0px;
+    font-weight: 400;
 }
 .intro a {
-    border-bottom: 1px solid rgba(0,0,0,.2);
-    padding: 2px;
+/*    text-decoration: underline;*/
+/*    padding: 2px;*/
     font-weight: 700;
-/*    font-size: 46px;*/
+    background-image: url(http://www.jarrettfuller.com/markpollard.net/images/lilnk-underline-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 .intro a:hover {
-    background-color: yellow;
-    transition: .5s;
-}
-.intro img {
-    padding: 0 10px 0 10px;
+    opacity: .6;
 }
 
 
@@ -733,6 +737,7 @@ header nav {
     .side-nav {width: 100%;  }
 .side-nav li {float: left; padding-right: 10px; font-size: 18px; }
 .sort {column-count: 1;}
+    .intro {width: 100%;}
 .intro p { font-size: 30px; line-height: 34px; text-indent: 50px;}
 
 article { width: 100%; }
