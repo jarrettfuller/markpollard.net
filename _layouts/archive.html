@@ -19,9 +19,9 @@
         {% for tag in sorted_tags %}
           {% assign c = tag | first %}
           {% assign posts = tag | last %}
-          <a href onclick="filter('{{ c }}'); return false;"><li class="blog-tags-item" id="{{ c }}-item">
-            {{ c }}
-          </li></a>
+          <li class="blog-tags-item" id="{{ c }}-item"><a href onclick="filter('{{ c }}'); return false;">
+            {{ c }}</a>
+          </li>
         {% endfor %}
     <a href onclick="filter('all'); return false;"><li class="blog-tags-item">All</li></a>
 <!--      </ul>-->
