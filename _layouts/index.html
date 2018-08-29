@@ -2,22 +2,18 @@
 <html>
 {% include head.html %}
     <body id="top">
-        <header>
-            <div id="container">
-                <div class="logo">
-{% include logo.html %}
+
+        <div class="titles home">
+<!--<h3>{{ page.h1 }}</h3>-->
+            <h1><img src="{{ site.github.url }}/images/strategy-is-your-words.png"></h1>
+            <div class="summary">{{ page.summary }}</div>
 </div>
 
-            <h1>Strategy is Your Words</h1>
-                </div>
 
-        </header>
-
-<div id="container">
     <div class="intro">
       {{ content }}
     </div>
-</div>
+
 
 <section class="clear"></section>
 {% include footer.html %}
