@@ -722,26 +722,12 @@ p {font-size: 16px;}
 #container { padding: 200px 25px 25px 25px;}
     h1 {padding-bottom: 15px;}
 h3 {width: 100%; font-size: 36px; line-height: 40px;}
-header { padding: 15px 0px 15px 0px; display: block;}
-header .logo { padding: 15; width: 100%; }
-header article { text-align: center; padding-top: 20px; padding-bottom: 10px; }
-header nav {
-    width: 100%;
-    font-size: 28px;
-    line-height: 30px;
-    padding-bottom: 15px;
-    }
-    header #container {display: block; padding-bottom: 0px; }
-    .side-nav {width: 100%;  }
-.side-nav li {float: left; padding-right: 15px; font-size: 18px; }
-.sort {column-count: 1;}
 .home {padding-top: 75px;}
 .home img {height: auto; width: 80%;}
 .intro {width: 100%; padding: 50px 25px 50px 25px;}
 .intro p { font-size: 30px; line-height: 36px; text-indent: 50px;}
-
 article { width: 100%; }
-    #share-bar {width: 100%;}
+#share-bar {width: 100%;}
 sidebar { padding-left: 0px; width: 100%; }
 
     main {width: 100%; }
@@ -757,32 +743,22 @@ sidebar { padding-left: 0px; width: 100%; }
 .blog-tags-list {padding-bottom: 50px;}
 .blog-tags-item {float: left; padding-right: 15px;}
 
-/*----------- MOBILE NAV --------------*/
-header nav ul {
-    display: none;
-}
-header nav ul {
-    position: fixed;
+/*----------- HEADER --------------*/
+header { padding: 15px 0px 15px 0px; display: block;}
+header .logo { padding: 15; width: 100%; }
+header article { text-align: center; padding-top: 20px; padding-bottom: 10px; }
+header nav {
     width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding-bottom: 25px;
-    z-index: 99;
-/*    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);*/
-}
-header nav ul li {
-    font-size: 25px;
-        text-align: center;
-        padding-top: 10px;
-        padding-left: 0px;
-        list-style: none;
-        border-bottom: 0px white solid;
-        float: none;
-    display: block;
-}
-    header nav ul li:hover {border-bottom-width: 0px;}
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 15px;
+    }
+    header #container {display: block; padding-bottom: 0px; }
+.side-nav {width: 100%;  }
+.side-nav li {float: left; padding-right: 15px; font-size: 18px; }
+.sort {column-count: 1;}
     .nav-up {    top: -200px;}
+
 /*----------- RESOURCES --------------*/
 .resource-list {display: block;}
 .resource-list a{ width: 100%;}
