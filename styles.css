@@ -109,19 +109,36 @@ sidebar ul {
 .sort {
     column-count: 3;
 }
-/*
-.sort a {
-    text-decoration: underline;
-}
-.sort a:hover {
-    opacity: .6;
-}
-*/
 .portrait {
-/*    border-radius: 50%;*/
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+/*----------- Contact --------------*/
+.form-group { border: 0px;}
+fieldset label {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+fieldset input {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 5px;
+        margin-bottom: 20px;
+}
+fieldset textarea {
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.contact-form input {
+    margin-left: 0px;
 }
 
 /*----------- HEADER --------------*/
@@ -131,12 +148,6 @@ header {
   width: 100%;
     position: fixed;
     background-color: white;
-/*
-        background-image: url(http://www.jarrettfuller.com/markpollard.net/images/black-line-01.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-*/
 }
 header #container {
     width: 100%;
@@ -520,25 +531,7 @@ hr {
 .podcast-list li:hover {
     text-decoration: underline;
 }
-/*
-.podcast-sidebar p {
-    background-image: url(http://www.jarrettfuller.com/markpollard.net/images/black-line-01.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    padding-top: 10px;
-    color: lightgrey;
-}
-.podcast-sidebar img {
-    border: 1px solid lightgrey;
-        box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
-    width: 100%;
-    margin-bottom: 25px;
-}
-.podcast-sidebar .fab {
-    font-size: 24px;
-}
-*/
+
 
 /*----------- RESPONSIVE VIDEO --------------*/
 .responsive-container {
