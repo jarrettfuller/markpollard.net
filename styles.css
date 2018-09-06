@@ -96,8 +96,8 @@ sidebar ul {
         font-size: 20px;
 }
 .side-nav li {
-        padding-bottom: 5px;
-            font-size: 20px;
+        padding-bottom: 8px;
+            font-size: 18px;
 }
 .side-nav li a {
     text-decoration: underline;
@@ -159,7 +159,7 @@ header #container {
 
   font-weight: normal;
   padding: 0px 15px 10px 0px;
-        width: 40%;
+        width: 50%;
     }
 nav {
     padding-top: 5px;
@@ -652,6 +652,10 @@ footer p a:hover {
       font-size: 16px;
         color: black;
 }
+footer p a i {
+    border-bottom: 0px;
+}
+/*
 footer .fab {
     font-size: 24px;
         color: #666666;
@@ -660,6 +664,7 @@ footer .fas {
     font-size: 24px;
         color: #666666;
 }
+*/
 footer li {
     padding-left: 25px;
     font-size: 16px;
@@ -681,6 +686,44 @@ footer .fa-linkedin:hover {
 }
 .footer-nav-block img {
     height: 21px;
+}
+.social {
+    width: 100%;
+    background-image: url(http://www.jarrettfuller.com/markpollard.net/images/black-line-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 25px;
+    text-align: center;
+}
+.social h2 {
+    font-weight: normal;
+    font-style: italic;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+/*
+.social ul {
+    text-align: center;
+    padding-bottom: 50px;
+          font-size: 16px;
+        color: #666666;
+}
+.social li {
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+        text-align: center;
+      font-size: 16px;
+        color: #666666;
+}
+*/
+.social a {
+    border-bottom: 0px;
+        padding-left: 10px;
+    padding-right: 10px;
+}
+.social a:hover {
+    border-bottom: 0px;
 }
 .colophon {
     display: flex;
@@ -818,6 +861,14 @@ footer {display: block; opacity: 1; padding: 0px }
     width: 100%;
     padding-right: 0px;
         padding-bottom: 20px;
-
 }
+    .social {
+        text-align: left;
+    }
+    .social a {
+        margin-left: 0px;
+        margin-right: 0px;
+        display: block;
+        padding-left: 0px;
+    }
 }
